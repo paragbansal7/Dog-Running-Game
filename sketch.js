@@ -131,7 +131,7 @@ function spawnfood() {
     food = createSprite(width+10, rand, 10, 10);
     food.addImage("abc", foodImage);
     food.scale = 0.3;
-    food.velocityX = -(10 + score / 2);
+    food.velocityX = -(20 + score / 2);
     food.lifetime = width/-(10 + score/2);
     foodGroup.add(food);
     dog.depth = food.depth + 1;
@@ -147,7 +147,7 @@ function spawnObstacles() {
     
 obstacle.setCollider("rectangle",-10,0,450 ,420);
     
-    obstacle.velocityX = -(8 + score / 4);
+    obstacle.velocityX = -(15 + score / 4);
     obstacle.lifetime = width/-(8+ score/4);
     obstacleGroup.add(obstacle);
     
